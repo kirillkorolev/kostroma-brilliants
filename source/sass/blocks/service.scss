@@ -51,7 +51,7 @@
   min-height: 324px;
 
   &--setting {
-    background-image: url("../../img/backgrounds/earrings-1920@1x.png");
+    background-image: url("../img/backgrounds/earrings-1920@1x.png");
     background-size: 73px 77px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -64,7 +64,7 @@
   }
 
   &--delivery {
-    background-image: url("../../img/backgrounds/delivery-1920@1x.png");
+    background-image: url("../img/backgrounds/delivery-1920@1x.png");
     background-size: 79px 79px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -77,7 +77,7 @@
   }
 
   &--payment {
-    background-image: url("../../img/backgrounds/pay-1920@1x.png");
+    background-image: url("../img/backgrounds/pay-1920@1x.png");
     background-size: 80px 80px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -90,7 +90,7 @@
   }
 
   &--guarantee {
-    background-image: url("../../img/backgrounds/label-1920@1x.png");
+    background-image: url("../img/backgrounds/label-1920@1x.png");
     background-size: 79px 79px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
