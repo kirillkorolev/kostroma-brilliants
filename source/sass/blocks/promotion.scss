@@ -1,0 +1,220 @@
+.promotion {
+  padding-top: 460px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-image: url("../img/backgrounds/pusets-1920@1x.png");
+  background-size: 969px 251px;
+  background-position: left 0 top 242px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/backgrounds/pusets-1920@2x.png");
+  }
+}
+
+.promotion__image {
+  position: absolute;
+  right: 0;
+  top: 101px;
+  max-width: 965px;
+  width: 51%;
+}
+
+.promotion__title {
+  margin: 0 0 36px;
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-size: 140px;
+  line-height: 140px;
+  font-weight: 700;
+}
+
+.promotion__text {
+  font-size: 28px;
+  line-height: 36px;
+  width: 426px;
+  margin-bottom: 109px;
+}
+
+.promotion__link {
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-weight: 700;
+  width: 210px;
+  color: $white;
+  display: inline-block;
+  vertical-align: top;
+  background-color: $orange;
+  text-align: center;
+  padding: 17px 41px 16px 40px;
+  border: 2px solid $orange;
+  margin-left: 5px;
+  letter-spacing: 0.09em;
+  position: relative;
+  z-index: 3;
+}
+
+.promotion__link::before,
+.promotion__link::after {
+  position: absolute;
+  content: "";
+  width: 205px;
+  height: 61px;
+  border: 1px solid $orange;
+  z-index: 2;
+}
+
+.promotion__link::before {
+  left: -9px;
+  top: -9px;
+}
+
+.promotion__link::after {
+  left: 9px;
+  top: 9px;
+}
+
+.promotion__link:hover,
+.promotion__link:focus {
+  border: 2px solid $orange;
+  color: $black;
+  background-color: $white;
+}
+
+.promotion__link:hover::before,
+.promotion__link:hover::after,
+.promotion__link:focus::before,
+.promotion__link:focus::after {
+  display: none;
+}
+
+.promotion__link:active {
+  opacity: 0.7;
+}
+
+.promotion__container {
+  background-color: $light-pink;
+  padding: 79px 0 125px 6.25%;
+}
+
+@media (max-width: $notebook) {
+  .promotion__image {
+    max-width: 692px;
+    right: 8.47%;
+    top: 120px;
+    width: 48.1%;
+  }
+
+  .promotion {
+    background-image: url("../img/backgrounds/pusets-1440@1x.png");
+    background-size: 618px 153px;
+    background-position: left 0 top 212px;
+    padding-top: 341px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/backgrounds/pusets-1440@2x.png");
+    }
+  }
+
+  .promotion__title {
+    font-size: 110px;
+    line-height: 110px;
+    margin-bottom: 29px;
+  }
+
+  .promotion__text {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 89px;
+  }
+
+  .promotion__link {
+    font-size: 16px;
+    line-height: 22px;
+    width: 160px;
+    padding: 12px 41px 10px 35px;
+    letter-spacing: 0.02em;
+  }
+
+  .promotion__container {
+    padding: 34px 0 83px 8.25%;
+    width: 71.88%;
+  }
+
+  .promotion__link::before,
+  .promotion__link::after {
+    width: 158px;
+    height: 48px;
+  }
+
+  .promotion__link::before {
+    top: -6px;
+    left: -7px;
+  }
+
+  .promotion__link::after {
+    top: 4px;
+    left: 4px;
+  }
+}
+
+@media (max-width: $tablet) {
+  .promotion__image {
+    max-width: 519px;
+    width: 68.1%;
+    right: 0;
+    top: 80px;
+  }
+
+  .promotion {
+    padding-top: 454px;
+    background-position: left 0 top 301px;
+  }
+
+  .promotion__container {
+    padding: 146px 0 90px 10.25%;
+    width: 100%;
+  }
+
+  .promotion__text {
+    margin-bottom: 81px;
+    width: 320px;
+  }
+}
+
+@media (max-width: 460px) {
+  .promotion__title {
+    font-size: 64px;
+    line-height: 48px;
+  }
+
+  .promotion__text {
+    font-size: 20px;
+    line-height: 30px;
+    width: 100%;
+  }
+}
+
+@media (max-width: $mobile) {
+  .promotion__image {
+    width: 246px;
+    max-width: 246px;
+    top: 50px;
+  }
+
+  .promotion {
+    background-image: url("../img/backgrounds/pusets-320@1x.png");
+    background-position: 25px 45px;
+    background-size: 59px 200px;
+    padding: 253px 0 0 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/backgrounds/pusets-320@2x.png");
+    }
+  }
+
+  .promotion__container {
+    padding: 98px 0 46px 6%;
+  }
+
+  .promotion__text {
+    margin-bottom: 56px;
+  }
+}
