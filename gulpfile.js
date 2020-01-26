@@ -108,7 +108,7 @@ gulp.task("clean", function() {
 
 gulp.task(
   "build",
-  gulp.series("clean", "copy", "css", "sprite", "html", "webp")
+  gulp.series("clean", "copy", "css", "sprite", "webp", "html")
 );
 gulp.task("start", gulp.series("build", "server"));
 
