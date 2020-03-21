@@ -80,6 +80,11 @@
   margin-bottom: 32px;
   font-size: 16px;
   line-height: 20px;
+  outline: none;
+
+  &--error {
+    border-bottom-color: $red;
+  }
 }
 
 .questions__input:hover,
@@ -96,6 +101,7 @@
   resize: none;
   padding: 0 0 2px;
   margin-bottom: 24px;
+  outline: none;
 }
 
 .questions__message::placeholder,
@@ -168,6 +174,14 @@
   border-color: $black;
 }
 
+.questions__checkbox--error + .questions__checkbox-label::before {
+  border-color: $red;
+}
+
+.questions__checkbox--error:checked + .questions__checkbox-label::before {
+  border-color: $border-orange;
+}
+
 .questions__wrapper {
   min-width: 405px;
   width: 100%;
@@ -216,7 +230,7 @@
   }
 
   .questions__mailing-confirmation {
-    margin-left: 34px;
+    margin-left: 32px;
   }
 
   .questions__button {

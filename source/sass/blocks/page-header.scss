@@ -5,7 +5,7 @@
   left: 50%;
   transform: translateX(-50%);
   background-color: $dark-beige;
-  z-index: 1000;
+  z-index: 300;
 }
 
 .page-header__icon-logo {
@@ -81,7 +81,9 @@
 
 @media (max-width: $tablet) {
   .page-header__button {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     padding: 0;
     background-color: transparent;
@@ -93,9 +95,6 @@
 
   .page-header__button span {
     display: block;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 23px;
     height: 3px;
     background-color: transparent;
@@ -117,7 +116,7 @@
     width: 32px;
     height: 3px;
     background-color: $pale-orange;
-    left: -4px;
+    left: -5px;
     top: 0;
     transition: top 0.3s, transform 0.3s  0.3s;
   }
