@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Интернет магазин украшений ювелирных изделий Бриллианты Костромы. Широкий ассортимент, возможность примерки, изысканный вкус">
+  <meta name="keywords" content="бриллианты, украшения, Костромы, ювелирные изделия, пусеты, золото, сапфир">
   <link rel="preload" href="css/style.min.css" as="style">
   <link rel="preload" href="fonts/montserrat-regular.woff2" as="font">
   <link rel="preload" href="fonts/montserrat-regular.woff" as="font">
@@ -351,7 +353,7 @@
             </fieldset>
             <fieldset class="questions__item questions__item--email">
               <label class="questions__label visually-hidden">Email</label>
-              <input id="email" class="questions__input js-input-email" type="email" name="email" placeholder="Email" required="" pattern="^([0-9]{9})|([A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3})$">
+              <input id="email" class="questions__input js-input-email" type="email" name="email" placeholder="Email" required="">
               <div class="questions__title-email">Email</div>
             </fieldset>
             <div class="questions__message-wrap">
@@ -359,16 +361,16 @@
               <div class="questions__title-message">Сообщение</div>
             </div>
             <div class="questions__personal-info-confirmation">
-              <input class="visually-hidden questions__checkbox" type="checkbox" id="personal-confirmation" checked="">
+              <input class="visually-hidden questions__checkbox js-confirmation-checkbox" type="checkbox" id="personal-confirmation">
               <label class="questions__checkbox-label" for="personal-confirmation"><span class="visually-hidden">Согласен</span></label>
               <div class="questions__text">Принимаю соглашение об обработке персональных данных</div>
             </div>
             <div class="questions__mailing-confirmation">
-              <input class="visually-hidden questions__checkbox" type="checkbox" id="mailing-confirmation">
+              <input class="visually-hidden questions__checkbox js-mailing-checkbox" type="checkbox" id="mailing-confirmation">
               <label class="questions__checkbox-label" for="mailing-confirmation"><span class="visually-hidden">Согласен</span></label>
               <div class="questions__text">Хочу получать рекламную рассылку “Бриллианты Костромы</div>
             </div>
-            <button class="questions__button" type="submit">Отправить</button>
+            <button class="questions__button js-submit-button" type="submit">Отправить</button>
           </form>
         </div>
       </section>
@@ -394,6 +396,14 @@
       </div>
     </div>
   </footer>
+  <div class="modal success success--hidden">
+    <h2 class="success__title">Ваше сообщение успешно отправлено!</h2>
+    <svg class="success__icon-logo" width="45" height="41">
+      <use xlink:href="#icon-logo"></use>
+    </svg>
+    <button class="modal__close-button js-close-success-button" aria-label="закрыть окно"><span></span></button>
+  </div>
+  <div class="blackout blackout--hidden"></div>
   <script src="./js/script.js"></script>
 </body>
 </html>
